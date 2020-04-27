@@ -25,7 +25,7 @@ if [ ! -e $NGINX_PATH ]; then
     apt-get update
     
     # Install requirements
-    apt-get install -y build-essential libpcre3 libpcre3-dev openssl libssl-dev unzip libaio1 ffmpeg
+    apt-get install -y build-essential libpcre3 libpcre3-dev zlib1g-dev openssl libssl-dev unzip libaio1 ffmpeg
     
     # Download Nginx server
     wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
